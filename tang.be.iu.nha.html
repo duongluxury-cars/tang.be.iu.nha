@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ff719a">
+<title>Gửi Thu Trang — 20/10 💗</title>
+<style>
+:root{--pink:#ff5f91;--rose:#c52b65;--cream:#fff8fb}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#6b2441;background:linear-gradient(140deg,#ffe4ee,#fff8fb 48%,#ffd1e1);overflow-x:hidden}
+main{width:min(100% - 28px,900px);margin:auto;padding:34px 0 60px;position:relative;z-index:1}
+.hero{text-align:center;padding:38px 18px 26px}
+.pill{display:inline-block;padding:8px 15px;border:1px solid #fff;background:#ffffff8c;border-radius:999px;font-size:.8rem;letter-spacing:1.5px}
+h1{font-size:clamp(2.3rem,8vw,5rem);line-height:1.08;margin:22px 0 12px;color:#c52b65;text-shadow:0 5px 20px #ff9dbc66}
+h2{font-size:clamp(1.35rem,4vw,2rem);margin:0;color:#a52b58}
+.lead{max-width:620px;margin:18px auto;color:#86445e;line-height:1.85}
+.cover{width:min(100%,540px);margin:20px auto 0;padding:10px;background:#ffffffb8;border:1px solid white;border-radius:28px;box-shadow:0 20px 60px #b42b5b20;transform:rotate(-1deg)}
+.cover img{display:block;width:100%;max-height:600px;object-fit:cover;object-position:center 40%;border-radius:20px}
+.caption{font-size:.9rem;padding:10px 0 3px}
+.panel{background:#ffffffb8;border:1px solid #fff;border-radius:25px;padding:clamp(22px,5vw,38px);margin:24px auto;box-shadow:0 14px 45px #b42b5b12;text-align:center}
+.panel p{line-height:1.95;margin:10px 0}
+.signature{font-size:1.2rem;font-weight:750;color:#c52b65}
+button{border:0;border-radius:999px;padding:13px 21px;margin:8px 5px;font-weight:700;font-size:1rem;cursor:pointer;transition:.2s}
+button:hover{transform:translateY(-2px)}
+.primary{background:linear-gradient(120deg,#ff5f91,#d72c6b);color:white;box-shadow:0 8px 20px #e94a7a30}
+.secondary{background:white;color:#c52b65;border:1px solid #ffc1d4}
+.letter{display:none;text-align:left;background:#fff7fa;border:1px dashed #f39ab8}
+.letter h3{text-align:center;color:#c52b65;font-size:1.45rem}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:20px}
+.photo{margin:0;background:white;padding:8px 8px 12px;border-radius:18px;box-shadow:0 8px 25px #a32b5618;transform:rotate(var(--tilt,1deg))}
+.photo:nth-child(even){--tilt:-1.2deg}
+.photo img{width:100%;height:290px;object-fit:cover;border-radius:12px;display:block}
+.photo figcaption{text-align:center;padding:10px 4px 0;font-size:.9rem}
+.question{font-size:clamp(1.3rem,4vw,2rem);font-weight:800;color:#c52b65}
+.answer{min-height:30px;color:#c52b65;font-weight:700}
+footer{text-align:center;font-size:.85rem;padding:24px 8px;color:#9e5570}
+.heart{position:fixed;bottom:-35px;z-index:0;pointer-events:none;animation:rise linear forwards;opacity:.8}
+@keyframes rise{to{transform:translateY(-115vh) rotate(360deg);opacity:0}}
+@keyframes pulse{50%{transform:scale(1.04)}}
+h1{animation:pulse 2.4s ease-in-out infinite}
+@media(max-width:520px){main{width:min(100% - 20px,900px)}.gallery{gap:9px}.photo img{height:220px}.hero{padding-top:25px}.cover img{max-height:480px}}
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <div class="pill">🌷 20 THÁNG 10 · NGÀY CỦA EM 🌷</div>
+    <h1>Chúc mừng 20/10</h1>
+    <h2>Dành riêng cho bé Trang iu dấu moa moa 💗</h2>
+    <p class="lead">Giữa rất nhiều điều dễ thương trên thế giới, anh vẫn thấy nụ cười của em là điều đặc biệt nhất.</p>
+    <div class="cover">
+      <img src="anh/chung-doi.png" alt="Ảnh kỷ niệm của hai chúng mình">
+      <div class="caption">Thật nhiều điều muốn nhớ 🫶</div>
+    </div>
+  </header>
+
+  <section class="panel">
+    <p>🌹 Chúc bé iu của anh luôn vui vẻ, xinh đẹp, bình an và gặp thật nhiều điều tốt lành moa moa.</p>
+    <p>Cảm ơn em đã xuất hiện, để những ngày bình thường của anh cũng có thêm lý do để mỉm cười.</p>
+    <p class="signature">Anh thương em nhiều lắm, Thu Trang! ❤️</p>
+    <button class="primary" id="openLetter">💌 Mở lá thư bí mật</button>
+    <button class="secondary" id="musicButton">🎵 Bật giai điệu</button>
+  </section>
+
+  <section class="panel letter" id="letter">
+    <h3>💌 Gửi em, Bé Heo của anh</h3>
+    <p>Em yêu à,</p>
+    <p>Nhân ngày 20/10, anh muốn dành tặng em một món quà nhỏ — không phải thứ gì quá lớn lao, mà là vài lời anh thật lòng muốn nói.</p>
+    <p>Anh mong em sẽ luôn được yêu thương, được lắng nghe và có thật nhiều lý do để cười. Những lúc mệt mỏi, em không cần phải lúc nào cũng mạnh mẽ; cứ chia sẻ với anh, mình cùng nhau đi qua nhé.</p>
+    <p>Anh không hứa mọi ngày đều hoàn hảo, nhưng anh sẽ cố gắng trân trọng em, quan tâm em và cùng em tạo thêm nhiều kỷ niệm đẹp.</p>
+    <p>Chúc em một ngày 20/10 ngọt ngào. Cảm ơn em vì đã là chính em và vì đã có mặt trong cuộc đời anh.</p>
+    <p class="signature" style="text-align:center">Thương em hôm nay, ngày mai và thật nhiều ngày sau nữa. 💖</p>
+  </section>
+
+  <section class="panel">
+    <h2>📸 Góc nhỏ về em</h2>
+    <p>Những khoảnh khắc đáng yêu mà anh muốn lưu giữ.</p>
+    <div class="gallery">
+      <figure class="photo"><img src="anh/thu-trang-1.png" alt="Ảnh Thu Trang 1" loading="lazy"><figcaption>Nàng thơ của anh 🌸</figcaption></figure>
+      <figure class="photo"><img src="anh/thu-trang-2.png" alt="Ảnh Thu Trang 2" loading="lazy"><figcaption>Dễ thương theo cách riêng 💗</figcaption></figure>
+      <figure class="photo"><img src="anh/thu-trang-3.png" alt="Ảnh Thu Trang 3" loading="lazy"><figcaption>Mong em luôn vui 🌷</figcaption></figure>
+      <figure class="photo"><img src="anh/thu-trang-4.png" alt="Ảnh Thu Trang 4" loading="lazy"><figcaption>Một chút dịu dàng, thật nhiều yêu thương 🧸</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="question">Bé Iu có thương anh không? 🥺💞</div>
+    <button class="primary" id="yes">Có chứ ❤️</button>
+    <button class="secondary" id="more">Thương nhiều hơn nữa 💖</button>
+    <div class="answer" id="answer" aria-live="polite"></div>
+  </section>
+  <footer>Được làm bằng ❤️ dành riêng cho Bé Iu · 20/10</footer>
+</main>
+<script>
+const letter=document.getElementById('letter');
+document.getElementById('openLetter').addEventListener('click',()=>{
+  letter.style.display=letter.style.display==='block'?'none':'block';
+  if(letter.style.display==='block'){letter.scrollIntoView({behavior:'smooth',block:'center'});burst();}
+});
+function heart(){
+  const el=document.createElement('span');el.className='heart';
+  el.textContent=['💗','💖','💕','❤️','🌸'][Math.floor(Math.random()*5)];
+  el.style.left=Math.random()*100+'vw';el.style.fontSize=(16+Math.random()*22)+'px';
+  el.style.animationDuration=(5+Math.random()*5)+'s';document.body.appendChild(el);
+  setTimeout(()=>el.remove(),10500);
+}
+setInterval(heart,500);
+function burst(){for(let i=0;i<24;i++)setTimeout(heart,i*60);}
+document.getElementById('yes').addEventListener('click',()=>{document.getElementById('answer').textContent='Anh biết màaa! Lại đây anh ôm một cái nào 🫂❤️';burst();});
+document.getElementById('more').addEventListener('click',()=>{document.getElementById('answer').textContent='Vậy thì anh cũng thương em nhiều hơn hôm qua một chút, và ngày mai sẽ nhiều hơn hôm nay! 💞';burst();});
+
+// Giai điệu tự tạo bằng Web Audio, không cần tải file nhạc.
+let ctx=null,timer=null,playing=false,index=0;
+const notes=[523.25,659.25,783.99,659.25,587.33,698.46,659.25,523.25];
+function note(freq){
+  if(!ctx||ctx.state!=='running')return;
+  const osc=ctx.createOscillator(),gain=ctx.createGain();
+  osc.type='sine';osc.frequency.value=freq;
+  gain.gain.setValueAtTime(.0001,ctx.currentTime);
+  gain.gain.exponentialRampToValueAtTime(.07,ctx.currentTime+.04);
+  gain.gain.exponentialRampToValueAtTime(.0001,ctx.currentTime+.38);
+  osc.connect(gain);gain.connect(ctx.destination);osc.start();osc.stop(ctx.currentTime+.4);
+}
+document.getElementById('musicButton').addEventListener('click',async()=>{
+  const btn=document.getElementById('musicButton');
+  if(playing){clearInterval(timer);playing=false;btn.textContent='🎵 Bật giai điệu';if(ctx)await ctx.suspend();return;}
+  const AC=window.AudioContext||window.webkitAudioContext;
+  if(!AC){alert('Trình duyệt này chưa hỗ trợ âm thanh.');return;}
+  if(!ctx)ctx=new AC();await ctx.resume();playing=true;btn.textContent='🔇 Tắt giai điệu';
+  const next=()=>{note(notes[index]);index=(index+1)%notes.length;};next();timer=setInterval(next,430);
+});
+</script>
+</body>
+</html>
